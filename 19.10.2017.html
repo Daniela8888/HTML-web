@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<link href="style.css" rel="stylesheet">
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<meta charset="utf-8">
+
+</HEAD>
+<THEAD>
+<body>
+<Form>
+<TABLE id="formtable">
+		<TR>
+            <td>Name:</td>
+            <td><input type="text" id="fname" minlength="3" maxlength="15" ></td>
+            <td>Surname:</td>
+            <td><input type="text" id="lname" minlength="3" maxlength="15"></td>
+            </TR>
+		<TR>
+			<Td>Date:</Td>
+			<td><input type="Date" id="brith" onchange="changeBirthday()"></td>
+			<Td>Gender:</Td>
+			<td><INPUT TYPE="RADIO" NAME="gender" VALUE="muz"> Male<BR>
+			    <INPUT TYPE="RADIO" NAME="gender" VALUE="zena"> Female </Td>
+	    </TR>
+	    <TR>
+			<Td></Td>
+			<td></td>
+			<Td></Td>
+			<Td></Td>
+			<td><button id="btnOk">Send</button></Td>
+	    </TR>
+		</Form>
+		</TABLE>
+		<br>
+	
+		<table>
+		<div id="menu"> Show gender: 
+		<select><option value="mf">Male + female</option>
+			<option value="m">Male</option>
+			<option value="f">Female</option></select>
+	
+
+		<input type="checkbox" name="check"></div>	
+
+
+</tr>
+</table>
+
+	</body>
+</THEAD>

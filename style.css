@@ -1,0 +1,14 @@
+#formtable {margin: auto; background-color: lightblue; padding-top: 30px; padding-bottom: 20px}
+td {padding-left: 20px; padding-right: 30px;}
+label { font-weight:bold; }
+ul {list-style-image: url(C:\Users\PC-1\Desktop\Moodle\WEBOVE TECHNOLOGIECSS\19.10.2017\sipocka-web.jpg);
+}
+#menu{margin: auto; background-color: lightblue;}
+.err{
+        width: 50px;
+      height: 20px;
+     color: red;
+     font-style: italic;
+     font-size: 18px;
+     text-align: center;
+        }
