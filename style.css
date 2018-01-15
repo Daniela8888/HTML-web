@@ -1,9 +1,23 @@
-#formtable {margin: auto; background-color: lightblue; padding-top: 30px; padding-bottom: 20px}
-td {padding-left: 20px; padding-right: 30px;}
-label { font-weight:bold; }
-ul {list-style-image: url(C:\Users\PC-1\Desktop\Moodle\WEBOVE TECHNOLOGIECSS\19.10.2017\sipocka-web.jpg);
-}
-#menu{margin: auto; background-color: lightblue;}
+#formTable{ margin: auto; background-color:orange; padding-top: 30px;
+ padding-bottom: 20px;font-style:italic;color: white;}
+
+body{background-color: grey;}
+
+td{padding-left: 20px; padding-right: 30px;}
+label { font-weight: bold; }
+
+#btnOk { width: 120px; align-content: center;}
+
+div.mainDiv {position: relative; width: 700px;
+margin: auto;}
+
+div.menu { position: relative;  background-color: darkred; width: 660px;
+       margin: auto; padding-top: 10px; padding-bottom: 10px;
+       padding-left: 12px;font-style:italic;color: white;
+     }
+
+div.selectBox { }
+
 .err{
         width: 50px;
       height: 20px;
@@ -12,3 +26,7 @@ ul {list-style-image: url(C:\Users\PC-1\Desktop\Moodle\WEBOVE TECHNOLOGIECSS\19.
      font-size: 18px;
      text-align: center;
         }
+
+div.FORM{ text-shadow: 2px 2px black;font-size: 40px;
+    text-align: center; padding-top: 30px;
+ padding-bottom: 20px;font-style:italic;color: white;}}
