@@ -1,10 +1,13 @@
-$(document).ready(function(){
+
+    $(document).ready(function($){
+	var error=false;
+	var persons= new Array();
+
 	$("#btnOk").click(function(event) {
-		var error=false;
 		var fname=$("#fname").val();
 		if(fname.trim().length<2) {
 			$("#errfname").html("Invalid first name");
-			eroor=true;
+			error=true;
 		}
 		var lname=$("#lname").val();
 		if(lname.trim().length<2){
@@ -18,46 +21,28 @@ $(document).ready(function(){
 }
 
 
+	function printTable(){
+		if(persons.length>0){
+			var divTable=$('.table');
+			var table=$("<table/>");
+			var line=$("<tr/>");
+			var col1=$("<th/>");
+			$(col1).append('First name');
+			var col2=$("<th/>");
+			$(col2).append('Last name');
+			var col3=$("<th/>");
+			$(col3).append('Date of birth');
+			var col4=$("<th/>");
+			$(col4).append('Gender');
+			var col5=$("<th/>");
+			$(col5).append('Delete');
+			line.append(col1);
+			line.append(col2);
+			line.append(col3);
+			line.append(col4);
+			line.append(col5);
+			table.append(line);
+			divTable.append(table);
 
-    
-function changeBirthday()
-{
-var birthdate=document.getElementById("brith").value; 
-var bd = new Date(birthdate);
-var day = bd.getDate();
-var month = bd.getMonth()+1;
-var year = bd.getFullYear();
-
-var today = new Date();
-var dd = today.getDate();
-var mm = today.getMonth()+1; //January is 0!
-var yyyy = today.getFullYear();
-
-var age= yyyy-year;
-if(month>mm)
-    document.getElementById("vys").value=age-1;
-else if(month<mm) 
-    document.getElementById("vys").value=age;
-else if(month==mm)
-    {
-        if(day>=dd)
-        document.getElementById("vys").value=age-1;
-        else
-        document.getElementById("vys").value=age;
-    }
-if(age<=0)
-    {
-document.getElementById("firsterr").innerHTML='You havent been born yet!';
-     
-    }
-else{
- document.getElementById("firsterr").innerHTML="";   
-}
-
-var age;
-if(currMonth>month)
-  age = currYear-year+1; 
-
-
-    
-}
+		}
+	}
