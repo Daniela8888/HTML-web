@@ -1,5 +1,4 @@
-
-    $(document).ready(function($){
+  $(document).ready(function($){
 	var error=false;
 	var persons= new Array();
 
@@ -43,6 +42,25 @@
 			line.append(col5);
 			table.append(line);
 			divTable.append(table);
+
+		}
+		//for(i=0;i<personsw.size();i++)();
+		persons.forEach(function(obj){
+			var line=$("<tr/>");
+			var col1=$("<td/>");
+			$(col1).append(obj.firstName);
+			var col2=$("<td/>");
+			$(col2).append(obj.lastName);
+			var col3=$("<td/>");
+			$(col3).append(obj.dob);
+			var col4=$("<td/>");
+			$(col4).append(obj.gender);
+			line.append(col1);
+			line.append(col2);
+			line.append(col3);
+			line.append(col4);
+			table.append(line);
+			
 
 		}
 	}
