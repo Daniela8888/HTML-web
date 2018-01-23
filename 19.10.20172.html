@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+</head>
+<body>
+  <div class="FORM">
+ <span class="font">FORM </span>
+</div>
+ 
+ <div class="mainDiv">
+  <table id="formTable">
+
+    
+<table id="table">
+   <tr>
+      <td class="first">
+      <span class="font">First Name: </span>
+      </td>
+      
+      <td>
+      <input id="fName" class="getSizeFromInput" type="text" name="firstname" placeholder="Your name">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><div id="errfname" class="err"></div></td>
+            </tr>
+            <tr>
+                <td class="first">
+                    <span class="font">Last Name :</span> 
+                </td>
+                <td>
+                    <input id="lName" class="setSize" type="text" name="lastname" placeholder="Your surname">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><div id="errlname" class="err"></div></td>
+            </tr>
+            <tr>
+                <td class="first">
+                    <span class="font">Date :</span> 
+                </td>
+                <td>
+                    <input id="compareDate" class="setSize" type="date" name="date">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><div id="errDate" class="err"></div></td>
+            </tr>
+            <tr>
+                <td class="first">
+                    <span class="font">Gender :</span>        
+                </td>
+                <td>
+                    <input class="check" id="male" type="radio" name="gender" value="male"><<span class="font">Male</span><br>
+                    <input class="check" id="female" type="radio" name="gender" value="female"><<span class="font">Female</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="first">
+                    <span class="font">Show gender :</span>
+                </td>
+                <td>
+                    <select id="selectGender">
+                        <option name = "selectGender" class="genderValue" value="a">Female+Male</option>
+                        <option name = "selectGender" class="genderValue" value="f">Female</option>
+                        <option name = "selectGender" class="genderValue" value="m">Male</option>
+                    </select>
+                </td>
+            </tr>   
+            <tr>
+                <td></td>
+                <td><input type="checkbox" name="age" id="showAge"> <span class="font" style="font-size: .8em; margin-top: 5px; display: inline-block;">SHOW AGE</span> </td>
+            </tr>
+        </table>
+        <div class="btnCenter">
+            <span id="btnSend"><button class="send" type="submit" name="odoslat">submit</button></span>
+        </div>  
+    </div>
+
+    <div class="table"></div>
+    <div>
+      <div class="btnSL">
+    <button id="btnSave" name="save">Save</button>
+    <button id="btnLoad" name="load">Load</button>
+    </div>
+  </div>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="forma.js"></script>
+</body>
+</html>

@@ -1,7 +1,6 @@
-#formTable{ margin: auto; background-color:orange; padding-top: 30px;
- padding-bottom: 20px;font-style:italic;color: white;}
 
-body{background-color: grey;}
+
+body{background-image: url("1.jpg");}
 
 td{padding-left: 20px; padding-right: 30px;}
 label { font-weight: bold; }
@@ -11,22 +10,35 @@ label { font-weight: bold; }
 div.mainDiv {position: relative; width: 700px;
 margin: auto;}
 
-div.menu { position: relative;  background-color: darkred; width: 660px;
+div.menu { position: relative; width: 660px;
        margin: auto; padding-top: 10px; padding-bottom: 10px;
-       padding-left: 12px;font-style:italic;color: white;
+       padding-left: 12px;
      }
 
 div.selectBox { }
 
+.font {
+  text-align: center; 
+  text-shadow: 2px 2px black;
+  color: white;
+  font-size: 120%;
+  font-family: "Raleway", sans-serif;
+  src: url('https://fonts.googleapis.com/css?family=Raleway');
+}
 .err{
-        width: 50px;
+        width: 150px;
       height: 20px;
-     color: red;
-     font-style: italic;
-     font-size: 18px;
+     color: white;
+    font-family: "Raleway", sans-serif
+     font-size: 15px;
      text-align: center;
         }
 
-div.FORM{ text-shadow: 2px 2px black;font-size: 40px;
+div.FORM{ text-shadow: 2px 2px black;font-size: 50px;
     text-align: center; padding-top: 30px;
  padding-bottom: 20px;font-style:italic;color: white;}}
+
+ div.btnSL{
+   margin: auto;
+  text-align: center;
+ }
